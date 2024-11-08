@@ -15,7 +15,7 @@ import Loader from "./Loader";
 const CollaborativeRoom = ({
   roomId,
   roomMetadata,
-  // users,
+  users,
   currentUserType,
 }: CollaborativeRoomProps) => {
   const [documentTitle, setDocumentTitle] = useState(roomMetadata.title);

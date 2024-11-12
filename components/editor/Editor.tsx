@@ -19,7 +19,7 @@ import {
   useEditorStatus,
 } from "@liveblocks/react-lexical";
 import Loader from "../Loader";
-import { useStatus, useThreads } from "@liveblocks/react/suspense";
+import { useThreads } from "@liveblocks/react/suspense";
 import FloatingToolbarPlugin from "./plugins/FloatingToolbarPlugin";
 import Comments from "../Comments";
 import { DeleteModal } from "../DeleteModal";

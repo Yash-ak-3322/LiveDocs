@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/select";
 
 const UserTypeSelector = ({
-  userType,
   setUserType,
   onClickHandler,
 }: UserTypeSelectorParams) => {

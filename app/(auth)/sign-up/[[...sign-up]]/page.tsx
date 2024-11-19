@@ -1,7 +1,7 @@
 import { SignUp } from "@clerk/nextjs";
 import React from "react";
 
-const SignOutPage = () => {
+const SignUpPage = () => {
   return (
     <main className="auth-page">
       <SignUp />
@@ -9,4 +9,4 @@ const SignOutPage = () => {
   );
 };
 
-export default SignOutPage;
+export default SignUpPage;

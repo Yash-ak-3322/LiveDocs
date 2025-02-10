@@ -3,7 +3,6 @@ import { useIsThreadActive } from "@liveblocks/react-lexical";
 import { Composer, Thread } from "@liveblocks/react-ui";
 import { useThreads } from "@liveblocks/react/suspense";
 import React from "react";
-import { threadId } from "worker_threads";
 
 const ThreadWrapper = ({ thread }: ThreadWrapperProps) => {
   const isActive = useIsThreadActive(thread.id);

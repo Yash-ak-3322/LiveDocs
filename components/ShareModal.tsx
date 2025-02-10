@@ -1,3 +1,5 @@
+"use client";
+
 import { useSelf } from "@liveblocks/react/suspense";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
@@ -13,7 +15,6 @@ import {
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import UserTypeSelector from "./UserTypeSelector";
-import CollaborativeRoom from "./CollabrativeRoom";
 import Collaborator from "./Collaborator";
 import { updateDocumentAccess } from "@/lib/actions/room.actions";
 
@@ -32,7 +33,7 @@ const ShareModal = ({
   const [email, setEmail] = useState("");
   const [userType, setUserType] = useState<UserType>("viewer");
 
-  const ShareDocumentHanlder = async () => {
+  const shareDocumentHandler = async () => {
     setLoading(true);
 
     await updateDocumentAccess({
@@ -90,7 +91,7 @@ const ShareModal = ({
             </div>
             <Button
               type="submit"
-              onClick={ShareDocumentHanlder}
+              onClick={shareDocumentHandler}
               className="gradient-blue flex h-full gap-1 px-5"
             >
               {loading ? "Sending....." : "Invite"}

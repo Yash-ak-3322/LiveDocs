@@ -1,4 +1,4 @@
-import CollaborativeRoom from "@/components/CollabrativeRoom";
+import CollaborativeRoom from "@/components/CollaborativeRoom";
 import { getDocument } from "@/lib/actions/room.actions";
 import { getClerkUsers } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs/server";

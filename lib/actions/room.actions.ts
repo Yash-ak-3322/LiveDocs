@@ -64,7 +64,7 @@ export const updateDocument = async (roomId: string, title: string) => {
 
     return parseStringify(updatedRoom);
   } catch (err) {
-    console.log("Error Occured while updating a room: " + err);
+    console.log("Error happened while updating a room: " + err);
   }
 };
 
@@ -74,7 +74,7 @@ export const getDocuments = async (email: string) => {
 
     return parseStringify(rooms);
   } catch (err) {
-    console.log("Error Occured while getting a rooms: " + err);
+    console.log("Error happened while getting a rooms: " + err);
   }
 };
 
@@ -113,7 +113,7 @@ export const updateDocumentAccess = async ({
 
     return parseStringify(room);
   } catch (err) {
-    console.log("Error Occured while updating a room access: " + err);
+    console.log("Error happened while updating a room access: " + err);
   }
 };
 
@@ -138,7 +138,7 @@ export const removeCollaborator = async ({
     revalidatePath(`/documents/${roomId}`);
     return parseStringify(updatedRoom);
   } catch (err) {
-    console.log("Error Occured while removing a collaborator: " + err);
+    console.log("Error happened while removing a collaborator: " + err);
   }
 };
 
@@ -148,6 +148,6 @@ export const deleteDocument = async (roomId: string) => {
     revalidatePath("/");
     redirect("/");
   } catch (err) {
-    console.log("Error Occured while removing a room: " + err);
+    console.log("Error happened while removing a room: " + err);
   }
 };

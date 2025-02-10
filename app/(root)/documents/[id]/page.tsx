@@ -5,9 +5,8 @@ import { currentUser } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
 export type SearchParamProps = {
-  params: {
-    id: string;
-  };
+  params: { [key: string]: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
 const Document = async ({ params: { id } }: SearchParamProps) => {
